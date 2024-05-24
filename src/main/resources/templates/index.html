@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление поставками</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+<h1>Управление поставками</h1>
+
+<h2>Поставщики</h2>
+<form id="supplierForm">
+    <input type="text" id="supplierName" placeholder="Имя поставщика" required>
+    <button type="submit">Добавить поставщика</button>
+</form>
+<ul id="supplierList"></ul>
+
+<h2>Продукты</h2>
+<form id="productForm">
+    <input type="text" id="productName" placeholder="Имя продукта" required>
+    <select id="productType">
+        <option value="PEAR">Груша</option>
+        <option value="APPLE">Яблоко</option>
+    </select>
+    <button type="submit">Добавить продукт</button>
+</form>
+<ul id="productList"></ul>
+
+<h2>Цены</h2>
+<form id="priceForm">
+    <select id="priceSupplier"></select>
+    <select id="priceProduct"></select>
+    <input type="number" id="priceAmount" placeholder="Цена" required>
+    <input type="date" id="priceStartDate" required>
+    <input type="date" id="priceEndDate" required>
+    <button type="submit">Установить цены</button>
+</form>
+<ul id="priceList"></ul>
+
+<h2>Поставки</h2>
+<form id="deliveryForm">
+    <select id="deliverySupplier"></select>
+    <input type="date" id="deliveryDate" required>
+    <button type="submit">Создать поставку</button>
+</form>
+<ul id="deliveryList"></ul>
+
+<h2>Продукты</h2>
+<div id="addDeliveryItemButton">Добавить продукты к поставке</div>
+
+
+
+<h2>Отчет о поставках</h2>
+<form id="reportForm">
+    <input type="date" id="reportStartDate" required>
+    <input type="date" id="reportEndDate" required>
+    <button type="submit">Получить отчет</button>
+</form>
+<ul id="reportList"></ul>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/script.js"></script>
+</body>
+</html>

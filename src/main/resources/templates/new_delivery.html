@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить продукты в доставку</title>
+</head>
+<body>
+<h1>Добавить продукты в доставку</h1>
+<form id="addItemForm">
+    <label for="deliveryDate">Имеющиеся даты поставки:</label>
+    <select id="deliveryDate" required>
+        <option value="" disabled selected>Выберите дату поставки</option>
+    </select>
+    <div id="productInputs">
+    </div>
+    <button type="submit">Добавить продукты в поставку </button>
+</form>
+<button id="goBackButton">Назад</button>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/delivery_script.js"></script>
+
+</body>
+</html>
